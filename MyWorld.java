@@ -6,7 +6,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class MyWorld extends World
+public class MyWorld extends SimulationWorld
 {
     private long lastFrameTimeMS;
     private double timeStepDuration;
@@ -19,7 +19,6 @@ public class MyWorld extends World
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 768, 1); 
-
         lastFrameTimeMS = System.currentTimeMillis();
         timeStepDuration = 1.0 / 60; //seems to be the default
         prepare();
